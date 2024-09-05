@@ -1,0 +1,255 @@
+% PRELIMINARY DATA - SUBJECT TO CHANGE WITHOUT NOTICE - NOT YET PEER REVIEWED
+% 
+%%%%%%%
+% 
+% This file is based on the new high-resolution Berkeley Earth global temperature
+% data set.  It expands upon the previous Berkeley Earth temperature data set by
+% including predictive structures based on historical weather patterns and 
+% increasing the underlying resolution to 0.25° x 0.25° latitude-longitude.
+% Files based on this new data set are being provided as part of an early preview
+% to aid in the identification of any remaining bugs or errors.  While, we 
+% believe the current dataset to be accurate and useful, it is still in 
+% development and substantial revisions remain possible if significant issues
+% are identified.
+% 
+%%%%%%%
+% 
+% This file contains a brief summary of the changes in Earth's global average
+% surface temperature estimated by combining the Berkeley Earth land-surface
+% temperature field with a reinterpolated version of the HadSST4 ocean temperature 
+% field.
+% 
+% As a preliminary data release, no citation is currently available for this data set.
+% 
+% This global data product merges land-surface air temperatures with ocean sea surface
+% water temperatures.  For most of the ocean, sea-surface temperatures are similar 
+% to near-surface air temperatures; however, air temperatures above sea ice can 
+% differ substantially from the water below the sea ice.  In sea ice regions, 
+% temperature anomalies are extrapolated from the land-surface air temperatures 
+% when ice is present, and from the ocean temperatures when ice is absent.
+% 
+% The percent coverage of sea ice was taken from the HadISST v2 dataset and varies 
+% by month and location.  In the typical month, between 3.5% and 5.5% of the 
+% Earth's surface is covered with sea ice. For more information on the processing 
+% and use of HadISST and HadSST refer to the description file for the combined 
+% gridded data product. 
+% 
+% Temperature data contributing to this analysis include (but are not limited to): 
+% 
+% GHCN-Monhtly v4, Menne et al. 2018, https://doi.org/10.1175/JCLI-D-18-0094.1
+% Global Summary of the Day, https://www.ncei.noaa.gov/products/global-summary-day
+% MET-Reader, Scientific Committee for Antaractic Research, British Antarctic Survey,
+%    https://legacy.bas.ac.uk/met/READER/
+% HADSST4, Kennedy et al. 2019, https://doi.org/10.1029/2018JD029867
+% 
+% Ice mask data comes from: 
+% 
+% HadISST2, Titcher and Rayner 2014, https://doi.org/10.1002/2013JD020316
+% Sea Ice Index, NSIDC, https://nsidc.org/data/g02135/versions/3
+% 
+% High-resolution downscaling algorithms were trained using high-resolution data,
+% though none of this data is used directly in the reconstruction.  High-resolution
+% datasets used in training include:
+% 
+% ERA5 from the Copernicus Climate Change Service, Hersbach et al. (2018), 
+%    http://doi.org/10.24381/cds.adbb2d47
+%    https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels
+% 
+% The above list of data sources is only a partial list.  For a more complete
+% set of references please refer to Berkeley Earth's previous description papers.
+% 
+% 
+% Temperatures are in Celsius and reported as anomalies relative to the 
+% Jan 1951-Dec 1980 average. Uncertainties represent the 95% confidence interval 
+% for statistical and spatial undersampling effects as well as ocean biases.
+% 
+% 
+% The land analysis was run on 06-Mar-2023 02:09:12
+% The ocean analysis was published on 13-Mar-2023 02:52:51
+% 
+% The land component is based on 50498 time series 
+%   with 21081445 monthly data points
+% 
+% The ocean component is based on 456950592 instantaneous 
+%   water temperature observations
+% 
+% Estimated Jan 1951-Dec 1980 global mean temperature (°C):
+%    14.148 +/- 0.019
+% 
+% 
+% Land + Ocean temperature anomaly        
+% Year, Annual Anomaly, Annual Unc., Five-year Anomaly, Five-year Unc.
+ 
+  1850      -0.326        0.189              NaN             NaN
+  1851      -0.215        0.186              NaN             NaN
+  1852      -0.253        0.234           -0.217           0.180
+  1853      -0.199        0.225           -0.159           0.180
+  1854      -0.094        0.204           -0.131           0.200
+  1855      -0.033        0.216           -0.153           0.173
+  1856      -0.076        0.347           -0.170           0.153
+  1857      -0.365        0.125           -0.196           0.153
+  1858      -0.280        0.179           -0.245           0.136
+  1859      -0.228        0.135           -0.310           0.120
+  1860      -0.274        0.153           -0.338           0.117
+  1861      -0.401        0.221           -0.356           0.107
+  1862      -0.506        0.120           -0.371           0.118
+  1863      -0.369        0.136           -0.344           0.118
+  1864      -0.303        0.161           -0.293           0.104
+  1865      -0.143        0.131           -0.218           0.101
+  1866      -0.144        0.125           -0.147           0.094
+  1867      -0.132        0.160           -0.097           0.098
+  1868      -0.013        0.109           -0.102           0.104
+  1869      -0.052        0.168           -0.111           0.119
+  1870      -0.170        0.185           -0.127           0.115
+  1871      -0.186        0.199           -0.168           0.117
+  1872      -0.211        0.121           -0.219           0.112
+  1873      -0.222        0.130           -0.242           0.103
+  1874      -0.304        0.137           -0.270           0.092
+  1875      -0.285        0.124           -0.205           0.082
+  1876      -0.330        0.101           -0.102           0.085
+  1877       0.115        0.104           -0.076           0.076
+  1878       0.293        0.145           -0.085           0.065
+  1879      -0.174        0.085           -0.047           0.069
+  1880      -0.331        0.085           -0.113           0.069
+  1881      -0.138        0.098           -0.228           0.064
+  1882      -0.214        0.088           -0.279           0.078
+  1883      -0.283        0.102           -0.300           0.090
+  1884      -0.430        0.126           -0.351           0.089
+  1885      -0.434        0.122           -0.395           0.095
+  1886      -0.395        0.105           -0.376           0.091
+  1887      -0.431        0.105           -0.300           0.081
+  1888      -0.189        0.101           -0.286           0.069
+  1889      -0.053        0.082           -0.274           0.070
+  1890      -0.363        0.078           -0.257           0.067
+  1891      -0.332        0.091           -0.279           0.066
+  1892      -0.351        0.083           -0.325           0.062
+  1893      -0.297        0.081           -0.297           0.062
+  1894      -0.284        0.075           -0.255           0.060
+  1895      -0.221        0.078           -0.208           0.059
+  1896      -0.120        0.089           -0.212           0.063
+  1897      -0.120        0.073           -0.178           0.064
+  1898      -0.313        0.080           -0.147           0.064
+  1899      -0.117        0.078           -0.156           0.064
+  1900      -0.067        0.080           -0.184           0.065
+  1901      -0.163        0.079           -0.205           0.067
+  1902      -0.259        0.085           -0.277           0.071
+  1903      -0.421        0.093           -0.330           0.076
+  1904      -0.474        0.091           -0.326           0.080
+  1905      -0.334        0.097           -0.355           0.078
+  1906      -0.142        0.095           -0.367           0.077
+  1907      -0.402        0.086           -0.360           0.072
+  1908      -0.482        0.084           -0.367           0.069
+  1909      -0.438        0.072           -0.427           0.063
+  1910      -0.369        0.087           -0.416           0.062
+  1911      -0.446        0.065           -0.392           0.060
+  1912      -0.344        0.079           -0.326           0.062
+  1913      -0.364        0.076           -0.252           0.060
+  1914      -0.105        0.076           -0.222           0.061
+  1915      -0.002        0.080           -0.245           0.059
+  1916      -0.296        0.070           -0.238           0.058
+  1917      -0.460        0.075           -0.274           0.058
+  1918      -0.327        0.073           -0.317           0.060
+  1919      -0.285        0.076           -0.285           0.063
+  1920      -0.220        0.092           -0.244           0.065
+  1921      -0.131        0.090           -0.212           0.068
+  1922      -0.257        0.083           -0.188           0.069
+  1923      -0.165        0.082           -0.175           0.066
+  1924      -0.168        0.078           -0.152           0.064
+  1925      -0.151        0.078           -0.122           0.064
+  1926      -0.018        0.071           -0.107           0.064
+  1927      -0.109        0.082           -0.135           0.064
+  1928      -0.086        0.073           -0.116           0.064
+  1929      -0.311        0.076           -0.116           0.063
+  1930      -0.053        0.075           -0.098           0.062
+  1931      -0.019        0.076           -0.135           0.063
+  1932      -0.021        0.075           -0.086           0.064
+  1933      -0.271        0.079           -0.099           0.064
+  1934      -0.069        0.077           -0.111           0.064
+  1935      -0.118        0.071           -0.097           0.062
+  1936      -0.079        0.073           -0.019           0.061
+  1937       0.053        0.071            0.014           0.061
+  1938       0.117        0.072            0.064           0.062
+  1939       0.098        0.076            0.094           0.066
+  1940       0.130        0.088            0.100           0.086
+  1941       0.071        0.186            0.090           0.114
+  1942       0.086        0.186            0.125           0.146
+  1943       0.066        0.184            0.120           0.179
+  1944       0.269        0.184            0.102           0.146
+  1945       0.109        0.184            0.087           0.119
+  1946      -0.021        0.122            0.071           0.100
+  1947       0.012        0.118            0.005           0.091
+  1948      -0.015        0.111           -0.049           0.094
+  1949      -0.061        0.096           -0.046           0.082
+  1950      -0.159        0.077           -0.033           0.070
+  1951      -0.005        0.069            0.006           0.062
+  1952       0.075        0.069            0.003           0.058
+  1953       0.182        0.074            0.017           0.058
+  1954      -0.078        0.069           -0.026           0.057
+  1955      -0.090        0.065           -0.029           0.056
+  1956      -0.218        0.061           -0.050           0.054
+  1957       0.058        0.056           -0.022           0.053
+  1958       0.081        0.056           -0.015           0.050
+  1959       0.060        0.056            0.044           0.046
+  1960      -0.055        0.050            0.033           0.042
+  1961       0.078        0.043            0.036           0.039
+  1962       0.003        0.038           -0.021           0.035
+  1963       0.095        0.043           -0.034           0.034
+  1964      -0.228        0.041           -0.060           0.034
+  1965      -0.120        0.041           -0.065           0.033
+  1966      -0.052        0.040           -0.105           0.030
+  1967      -0.021        0.034           -0.059           0.027
+  1968      -0.103        0.031           -0.034           0.024
+  1969       0.001        0.028           -0.038           0.021
+  1970       0.007        0.027           -0.040           0.019
+  1971      -0.075        0.025            0.021           0.018
+  1972      -0.029        0.025           -0.002           0.018
+  1973       0.204        0.025            0.005           0.018
+  1974      -0.117        0.028           -0.010           0.019
+  1975       0.045        0.028            0.040           0.020
+  1976      -0.155        0.028            0.015           0.021
+  1977       0.225        0.031            0.067           0.021
+  1978       0.077        0.028            0.125           0.021
+  1979       0.143        0.024            0.239           0.020
+  1980       0.335        0.029            0.216           0.020
+  1981       0.414        0.024            0.271           0.019
+  1982       0.110        0.027            0.267           0.019
+  1983       0.352        0.026            0.223           0.018
+  1984       0.123        0.026            0.182           0.019
+  1985       0.115        0.028            0.230           0.019
+  1986       0.213        0.027            0.248           0.019
+  1987       0.348        0.025            0.278           0.019
+  1988       0.440        0.027            0.355           0.019
+  1989       0.272        0.026            0.409           0.020
+  1990       0.501        0.028            0.387           0.020
+  1991       0.485        0.027            0.355           0.020
+  1992       0.235        0.028            0.373           0.020
+  1993       0.281        0.028            0.386           0.020
+  1994       0.363        0.027            0.366           0.021
+  1995       0.565        0.028            0.423           0.021
+  1996       0.385        0.027            0.506           0.020
+  1997       0.518        0.026            0.529           0.020
+  1998       0.697        0.028            0.504           0.020
+  1999       0.478        0.028            0.552           0.020
+  2000       0.442        0.027            0.594           0.020
+  2001       0.623        0.027            0.597           0.019
+  2002       0.731        0.024            0.619           0.020
+  2003       0.709        0.026            0.693           0.020
+  2004       0.593        0.025            0.710           0.020
+  2005       0.810        0.025            0.718           0.021
+  2006       0.709        0.025            0.696           0.021
+  2007       0.768        0.029            0.721           0.022
+  2008       0.599        0.025            0.724           0.022
+  2009       0.720        0.027            0.720           0.022
+  2010       0.826        0.025            0.706           0.021
+  2011       0.685        0.025            0.735           0.022
+  2012       0.700        0.026            0.748           0.022
+  2013       0.745        0.029            0.778           0.022
+  2014       0.785        0.028            0.866           0.023
+  2015       0.977        0.026            0.927           0.024
+  2016       1.122        0.029            0.960           0.023
+  2017       1.007        0.025            1.013           0.022
+  2018       0.908        0.023            1.041           0.022
+  2019       1.053        0.026            1.004           0.022
+  2020       1.118        0.027            0.996             NaN
+  2021       0.936        0.029              NaN             NaN
+  2022       0.964          NaN              NaN             NaN
